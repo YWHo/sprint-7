@@ -21,7 +21,8 @@ Here’s another way to define whether a positive whole number is even or odd:
 - One is odd.
 -  For any other number N, its evenness is the same as N - 2.
 
-Define a recursive function isEven corresponding to this description. The function should accept a number parameter and return a Boolean.
+Define a recursive function isEven corresponding to this description. 
+The function should accept a number parameter and return a Boolean.
 */
 
 function isEven(num) {
@@ -40,4 +41,22 @@ console.log("\n---- test function isEven() -----");
 console.log(isEven(50)); // expect: true
 console.log(isEven(75)); // expect: false
 console.log(isEven(-1)); // expect: false
+
+
+/*
+Write a function countBs that takes a string as its only argument and
+returns a number that indicates how many uppercase “B” characters are
+ in the string.
+*/
+
+function countBs(str) {
+    let total = 0;
+    for (let i=0; i<str.length; i++) {
+        if (str[i] == 'B') total += 1;
+    }
+    return total;
+}
+
+console.log("\n---- test function countBs() -----");
+console.log(countBs("BBC"));    // expect: 2
 
