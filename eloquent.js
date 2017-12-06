@@ -60,3 +60,20 @@ function countBs(str) {
 console.log("\n---- test function countBs() -----");
 console.log(countBs("BBC"));    // expect: 2
 
+
+/*
+Next, write a function called countChar that behaves like countBs, except it
+takes a second argument that indicates the character that is to be counted
+(rather than counting only uppercase “B” characters).
+*/
+
+function countChar(str, theChar) {
+    let total = 0;
+    for (let i=0; i<str.length; i++) {
+        if (str[i] == theChar) total += 1;
+    }
+    return total;
+}
+
+console.log("\n---- test function countChar() -----");
+console.log(countChar("kakkerlak", "k"));   // expect: 4
