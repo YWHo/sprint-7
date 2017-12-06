@@ -77,3 +77,14 @@ function countChar(str, theChar) {
 
 console.log("\n---- test function countChar() -----");
 console.log(countChar("kakkerlak", "k"));   // expect: 4
+
+/*
+Rewrite countBs to make use of this new function (countChar).
+*/
+
+function countBs_v2(str) {
+    return countChar(str, "B");
+}
+
+console.log("\n---- test function countBs_v2() -----");
+console.log(countBs_v2("BBC"));    // expect: 2
